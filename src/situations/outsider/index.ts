@@ -1,0 +1,1 @@
+export { infinite_labyrinth } from './infinite_labyrinth'

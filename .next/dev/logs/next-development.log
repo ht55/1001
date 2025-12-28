@@ -1,0 +1,293 @@
+[00:00:00.862] Server  LOG      ✓ Ready in 598ms
+[00:06:28.735] Server  LOG      ✓ Compiled in 119ms
+[00:06:38.330] Server  LOG      ✓ Compiled in 22ms
+[00:06:45.554] Server  LOG      ✓ Compiled in 21ms
+[00:06:50.639] Server  LOG      ✓ Compiled in 33ms
+[00:07:36.111] Server  LOG      ✓ Compiled in 54ms
+[00:07:43.940] Server  LOG      ✓ Compiled in 24ms
+[00:08:13.767] Server  LOG      ✓ Compiled in 50ms
+[00:09:05.163] Server  LOG      ✓ Compiled in 57ms
+[00:09:19.227] Server  LOG      ✓ Compiled in 22ms
+[00:11:29.476] Server  LOG      ✓ Compiled in 41ms
+[00:12:02.162] Server  LOG      ✓ Compiled in 18ms
+[00:15:55.980] Server  LOG      ✓ Compiled in 38ms
+[00:17:35.657] Server  LOG      ✓ Compiled in 32ms
+[00:17:46.139] Server  LOG      ✓ Compiled in 4ms
+[00:18:01.897] Server  LOG      ✓ Compiled in 5ms
+[00:21:08.037] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `div`.  It was passed a child from CharacterThemeMatrix.
+[00:23:11.137] Server  LOG      ✓ Compiled in 64ms
+[00:24:11.890] Server  LOG      ✓ Compiled in 34ms
+[00:24:56.240] Server  LOG      ✓ Compiled in 31ms
+[00:25:29.729] Server  LOG      ✓ Compiled in 36ms
+[00:26:46.011] Server  LOG      ✓ Compiled in 33ms
+[00:30:41.763] Server  LOG      ✓ Compiled in 24ms
+[00:30:51.083] Server  LOG      ✓ Compiled in 8ms
+[00:30:58.029] Server  LOG      ✓ Compiled in 7ms
+[00:31:05.939] Server  LOG      ✓ Compiled in 11ms
+[00:32:33.578] Server  LOG      ✓ Compiled in 30ms
+[00:32:50.125] Server  LOG      ✓ Compiled in 7ms
+[00:32:58.335] Server  LOG      ✓ Compiled in 21ms
+[00:34:11.691] Server  LOG      ✓ Compiled in 78ms
+[00:34:11.802] Browser ERROR   ./src/components/common/ReferencePanel.tsx:28:11
+Parsing ecmascript source code failed
+  26 |           fontSize: 14,
+  27 |           fontStyle: "oblique"
+> 28 |           cursor: "pointer",
+     |           ^^^^^^
+  29 |           padding: 0,
+  30 |         }}
+  31 |       >
+
+Expected '</', got 'cursor'
+
+Import traces:
+  Browser:
+    ./src/components/common/ReferencePanel.tsx
+    ./pages/story/index.tsx
+
+  SSR:
+    ./src/components/common/ReferencePanel.tsx
+    ./pages/story/index.tsx
+[00:34:20.424] Server  LOG      ✓ Compiled in 43ms
+[00:34:43.616] Server  LOG      ✓ Compiled in 11ms
+[00:34:48.081] Server  LOG      ✓ Compiled in 9ms
+[00:34:57.484] Server  LOG      ✓ Compiled in 10ms
+[00:35:05.000] Server  LOG      ✓ Compiled in 8ms
+[00:35:11.981] Server  LOG      ✓ Compiled in 10ms
+[00:35:17.410] Server  LOG      ✓ Compiled in 24ms
+[00:36:50.809] Server  LOG      ✓ Compiled in 87ms
+[00:36:59.353] Server  LOG      ✓ Compiled in 30ms
+[00:37:17.101] Server  LOG      ✓ Compiled in 25ms
+[00:37:25.417] Server  LOG      ✓ Compiled in 17ms
+[00:37:38.075] Server  LOG      ✓ Compiled in 29ms
+[00:37:44.265] Server  LOG      ✓ Compiled in 22ms
+[00:37:52.940] Server  LOG      ✓ Compiled in 58ms
+[00:38:08.707] Server  LOG      ✓ Compiled in 37ms
+[00:38:15.130] Server  LOG      ✓ Compiled in 24ms
+[00:40:29.826] Server  LOG      ✓ Compiled in 57ms
+[00:41:05.699] Server  LOG      ✓ Compiled in 66ms
+[00:41:23.266] Server  LOG      ✓ Compiled in 16ms
+[00:41:54.436] Server  LOG      ✓ Compiled in 28ms
+[00:42:28.150] Server  LOG      ✓ Compiled in 58ms
+[00:42:44.525] Server  LOG      ✓ Compiled in 22ms
+[00:43:29.290] Server  LOG      ✓ Compiled in 37ms
+[00:43:41.576] Server  LOG      ✓ Compiled in 18ms
+[00:44:24.689] Server  LOG      ✓ Compiled in 49ms
+[00:44:30.854] Server  LOG      ✓ Compiled in 19ms
+[00:45:00.563] Server  LOG      ✓ Compiled in 38ms
+[00:45:15.740] Server  LOG      ✓ Compiled in 22ms
+[00:45:35.522] Server  LOG      ✓ Compiled in 20ms
+[00:46:00.178] Server  LOG      ✓ Compiled in 39ms
+[00:47:09.771] Server  LOG      ✓ Compiled in 50ms
+[00:47:20.113] Server  LOG      ✓ Compiled in 23ms
+[00:47:48.988] Server  LOG      ✓ Compiled in 41ms
+[00:48:08.155] Server  LOG      ✓ Compiled in 19ms
+[00:48:57.465] Server  LOG      ✓ Compiled in 42ms
+[00:49:10.025] Server  LOG      ✓ Compiled in 17ms
+[00:49:32.368] Server  LOG      ✓ Compiled in 39ms
+[00:49:39.477] Server  LOG      ✓ Compiled in 41ms
+[00:49:59.386] Server  LOG      ✓ Compiled in 19ms
+[00:50:15.067] Server  LOG      ✓ Compiled in 23ms
+[00:50:43.324] Server  LOG      ✓ Compiled in 53ms
+[00:51:23.515] Server  LOG      ✓ Compiled in 35ms
+[00:51:50.364] Server  LOG      ✓ Compiled in 42ms
+[00:52:08.113] Server  LOG      ✓ Compiled in 19ms
+[00:52:23.984] Server  LOG      ✓ Compiled in 61ms
+[00:52:30.355] Server  LOG      ✓ Compiled in 25ms
+[00:53:14.551] Server  LOG      ✓ Compiled in 49ms
+[00:53:44.676] Server  LOG      ✓ Compiled in 23ms
+[00:53:59.688] Server  LOG      ✓ Compiled in 16ms
+[00:54:06.003] Server  LOG      ✓ Compiled in 17ms
+[00:54:12.141] Server  LOG      ✓ Compiled in 19ms
+[00:54:33.684] Server  LOG      ✓ Compiled in 41ms
+[00:54:39.683] Server  LOG      ✓ Compiled in 49ms
+[00:57:49.638] Server  LOG      ✓ Compiled in 38ms
+[00:58:02.033] Server  LOG      ✓ Compiled in 4ms
+[00:58:27.910] Server  LOG      ✓ Compiled in 13ms
+[01:01:20.824] Server  LOG      ✓ Compiled in 68ms
+[01:04:04.293] Server  LOG      ✓ Compiled in 32ms
+[01:04:16.253] Server  LOG      ✓ Compiled in 49ms
+[01:09:17.974] Server  LOG      ✓ Compiled in 203ms
+[01:10:28.781] Server  LOG      ✓ Compiled in 64ms
+[01:10:38.413] Server  LOG      ✓ Compiled in 4ms
+[01:10:58.978] Server  LOG      ✓ Compiled in 17ms
+[01:11:46.628] Server  LOG      ✓ Compiled in 13ms
+[01:13:42.587] Server  LOG      ✓ Compiled in 26ms
+[01:13:53.635] Server  LOG      ✓ Compiled in 7ms
+[01:14:09.840] Server  LOG      ✓ Compiled in 25ms
+[01:14:52.627] Server  LOG      ✓ Compiled in 93ms
+[01:16:40.494] Server  LOG      ✓ Compiled in 86ms
+[01:16:47.103] Server  LOG      ✓ Compiled in 8ms
+[01:17:08.108] Server  LOG      ✓ Compiled in 6ms
+[01:17:36.882] Server  LOG      ✓ Compiled in 13ms
+[01:18:51.207] Server  LOG      ✓ Compiled in 33ms
+[01:19:05.752] Server  LOG      ✓ Compiled in 7ms
+[01:19:18.433] Server  LOG      ✓ Compiled in 10ms
+[01:19:38.324] Server  LOG      ✓ Compiled in 50ms
+[01:19:45.725] Server  LOG      ✓ Compiled in 17ms
+[01:20:13.510] Server  LOG      ✓ Compiled in 10ms
+[01:21:33.745] Server  LOG      ✓ Compiled in 40ms
+[01:21:46.927] Server  LOG      ✓ Compiled in 45ms
+[01:22:10.268] Server  LOG      ✓ Compiled in 24ms
+[01:22:28.948] Server  LOG      ✓ Compiled in 54ms
+[01:22:32.901] Server  LOG      ✓ Compiled in 14ms
+[01:22:37.526] Server  LOG      ✓ Compiled in 18ms
+[01:22:55.119] Server  LOG      ✓ Compiled in 44ms
+[01:23:22.089] Server  LOG      ✓ Compiled in 32ms
+[01:23:40.915] Server  LOG      ✓ Compiled in 27ms
+[01:24:31.320] Server  LOG      ✓ Compiled in 32ms
+[01:24:41.018] Server  LOG      ✓ Compiled in 20ms
+[01:25:40.437] Server  LOG      ✓ Compiled in 50ms
+[01:25:49.462] Server  LOG      ✓ Compiled in 18ms
+[01:26:17.105] Server  LOG      ✓ Compiled in 66ms
+[01:27:30.845] Server  LOG      ✓ Compiled in 30ms
+[01:27:56.730] Server  LOG      ✓ Compiled in 12ms
+[01:36:23.636] Server  LOG      ✓ Compiled in 53ms
+[01:37:04.987] Server  LOG      ✓ Compiled in 37ms
+[01:38:16.140] Server  LOG      ✓ Compiled in 47ms
+[01:38:35.612] Server  LOG      ✓ Compiled in 22ms
+[01:39:00.394] Server  LOG      ✓ Compiled in 29ms
+[01:39:43.016] Server  LOG      ✓ Compiled in 67ms
+[01:39:43.216] Browser LOG     Refreshing page data due to server-side change
+[01:39:43.216] Browser ERROR   ./pages/story/index.tsx:164:19
+Parsing ecmascript source code failed
+  162 |                 </div>
+  163 |               </div>
+> 164 |             </div>
+      |                   ^
+> 165 |           </section>
+      | ^^^^^^^^^^^
+  166 |
+  167 |           {/* Character */}
+  168 |           <section>
+
+Expected '</', got 'jsx text (
+          )'
+[01:39:48.392] Server  LOG      ✓ Compiled in 24ms
+[01:39:48.464] Browser LOG     Refreshing page data due to server-side change
+[01:42:00.842] Server  LOG      ✓ Compiled in 52ms
+[01:43:02.771] Server  LOG      ✓ Compiled in 43ms
+[01:43:15.876] Server  LOG      ✓ Compiled in 17ms
+[01:44:26.046] Server  LOG      ✓ Compiled in 38ms
+[01:44:32.643] Server  LOG      ✓ Compiled in 19ms
+[01:45:11.531] Server  LOG      ✓ Compiled in 60ms
+[01:45:35.429] Server  LOG      ✓ Compiled in 25ms
+[01:46:18.900] Server  LOG      ✓ Compiled in 26ms
+[01:46:29.531] Server  LOG      ✓ Compiled in 25ms
+[01:48:01.013] Server  LOG      ✓ Compiled in 42ms
+[01:48:10.011] Server  LOG      ✓ Compiled in 5ms
+[02:00:07.204] Server  LOG      ✓ Compiled in 97ms
+[02:03:34.042] Server  LOG      ✓ Compiled in 44ms
+[02:03:51.564] Server  LOG      ✓ Compiled in 44ms
+[02:06:07.501] Server  LOG      ✓ Compiled in 37ms
+[02:06:38.462] Server  LOG      ✓ Compiled in 50ms
+[02:08:00.787] Server  LOG      ✓ Compiled in 94ms
+[02:08:11.906] Server  LOG      ✓ Compiled in 21ms
+[02:08:34.343] Server  LOG      ✓ Compiled in 34ms
+[02:12:15.861] Server  LOG      ✓ Compiled in 60ms
+[02:12:48.717] Server  LOG      ✓ Compiled in 42ms
+[02:13:00.506] Server  LOG      ✓ Compiled in 12ms
+[02:13:26.246] Server  LOG      ✓ Compiled in 40ms
+[02:13:48.237] Server  LOG      ✓ Compiled in 42ms
+[02:15:16.227] Server  LOG      ✓ Compiled in 59ms
+[02:15:49.382] Server  LOG      ✓ Compiled in 38ms
+[02:17:32.780] Server  LOG      ✓ Compiled in 35ms
+[02:18:18.642] Server  LOG      ✓ Compiled in 34ms
+[02:20:16.902] Server  LOG      ✓ Compiled in 46ms
+[02:22:12.293] Server  LOG      ✓ Compiled in 52ms
+[02:24:20.537] Server  LOG      ✓ Compiled in 13ms
+[02:24:28.636] Server  LOG      ✓ Compiled in 4ms
+[02:25:01.305] Server  LOG      ✓ Compiled in 21ms
+[02:26:04.616] Server  LOG      ✓ Compiled in 54ms
+[02:26:10.732] Server  LOG      ✓ Compiled in 18ms
+[02:28:30.247] Server  LOG      ✓ Compiled in 43ms
+[02:29:08.226] Server  LOG      ✓ Compiled in 47ms
+[02:29:08.338] Browser ERROR   %s a style property during rerender (%s) when a conflicting property is set (%s) can lead to styling bugs. To avoid this, don't mix shorthand and non-shorthand properties for the same value; instead, replace the shorthand with separate values. Removing font fontSize
+[02:29:08.338] Browser ERROR   %s a style property during rerender (%s) when a conflicting property is set (%s) can lead to styling bugs. To avoid this, don't mix shorthand and non-shorthand properties for the same value; instead, replace the shorthand with separate values. Removing font fontWeight
+[02:29:18.251] Server  LOG      ✓ Compiled in 20ms
+[02:29:23.148] Server  LOG      ✓ Compiled in 20ms
+[02:29:29.739] Server  LOG      ✓ Compiled in 17ms
+[02:29:43.341] Server  LOG      ✓ Compiled in 48ms
+[02:30:50.818] Server  LOG      ✓ Compiled in 50ms
+[02:31:30.321] Server  LOG      ✓ Compiled in 31ms
+[02:31:32.987] Server  LOG      ✓ Compiled in 7ms
+[02:31:36.095] Server  LOG      ✓ Compiled in 7ms
+[02:31:38.231] Server  LOG      ✓ Compiled in 5ms
+[02:31:40.238] Server  LOG      ✓ Compiled in 7ms
+[02:31:42.852] Server  LOG      ✓ Compiled in 6ms
+[02:32:06.613] Server  LOG      ✓ Compiled in 15ms
+[02:32:22.506] Server  LOG      ✓ Compiled in 36ms
+[02:32:45.627] Server  LOG      ✓ Compiled in 18ms
+[02:33:06.529] Server  LOG      ✓ Compiled in 44ms
+[02:33:25.713] Server  LOG      ✓ Compiled in 19ms
+[02:33:28.744] Server  LOG      ✓ Compiled in 5ms
+[02:33:31.311] Server  LOG      ✓ Compiled in 5ms
+[02:34:28.823] Server  LOG      ✓ Compiled in 36ms
+[02:34:35.391] Server  LOG      ✓ Compiled in 8ms
+[02:34:37.983] Server  LOG      ✓ Compiled in 5ms
+[02:34:46.413] Server  LOG      ✓ Compiled in 30ms
+[02:34:50.696] Server  LOG      ✓ Compiled in 5ms
+[02:34:54.130] Server  LOG      ✓ Compiled in 6ms
+[02:34:57.264] Server  LOG      ✓ Compiled in 8ms
+[02:35:00.616] Server  LOG      ✓ Compiled in 11ms
+[02:35:04.144] Server  LOG      ✓ Compiled in 6ms
+[02:35:25.420] Server  LOG      ✓ Compiled in 21ms
+[02:35:44.893] Server  LOG      ✓ Compiled in 38ms
+[02:35:57.875] Server  LOG      ✓ Compiled in 12ms
+[02:36:10.020] Server  LOG      ✓ Compiled in 9ms
+[02:36:15.102] Server  LOG      ✓ Compiled in 9ms
+[02:36:17.680] Server  LOG      ✓ Compiled in 7ms
+[02:36:37.969] Server  LOG      ✓ Compiled in 114ms
+[02:36:42.017] Server  LOG      ✓ Compiled in 11ms
+[02:37:07.223] Server  LOG      ✓ Compiled in 31ms
+[02:37:38.779] Server  LOG      ✓ Compiled in 44ms
+[02:39:43.393] Server  LOG      ✓ Compiled in 51ms
+[02:40:05.653] Server  LOG      ✓ Compiled in 35ms
+[02:41:35.652] Server  LOG      ✓ Compiled in 55ms
+[02:42:16.324] Server  LOG      ✓ Compiled in 58ms
+[02:48:28.113] Server  LOG      ✓ Compiled in 44ms
+[02:48:36.160] Server  LOG      ✓ Compiled in 9ms
+[02:49:18.880] Server  LOG      ✓ Compiled in 55ms
+[02:50:52.007] Server  LOG      ✓ Compiled in 36ms
+[02:52:34.387] Server  LOG      ✓ Compiled in 62ms
+[02:55:33.762] Server  LOG      ✓ Compiled in 11ms
+[02:55:37.848] Server  LOG      ✓ Compiled in 4ms
+[02:56:12.444] Server  LOG      ✓ Compiled in 6ms
+[02:56:15.773] Server  LOG      ✓ Compiled in 4ms
+[02:57:20.669] Server  LOG      ✓ Compiled in 19ms
+[02:57:31.803] Server  LOG      ✓ Compiled in 6ms
+[02:57:53.323] Server  LOG      ✓ Compiled in 6ms
+[02:58:09.768] Server  LOG      ✓ Compiled in 3ms
+[02:58:15.623] Server  LOG      ✓ Compiled in 10ms
+[02:58:28.330] Server  LOG      ✓ Compiled in 14ms
+[02:58:35.927] Server  LOG      ✓ Compiled in 4ms
+[02:58:57.070] Server  LOG      ✓ Compiled in 11ms
+[02:59:11.217] Server  LOG      ✓ Compiled in 4ms
+[02:59:33.012] Server  LOG      ✓ Compiled in 12ms
+[02:59:55.702] Server  LOG      ✓ Compiled in 16ms
+[03:00:21.775] Server  LOG      ✓ Compiled in 17ms
+[03:00:54.565] Server  LOG      ✓ Compiled in 12ms
+[03:01:07.964] Server  LOG      ✓ Compiled in 5ms
+[03:01:18.475] Server  LOG      ✓ Compiled in 11ms
+[03:02:00.020] Server  LOG      ✓ Compiled in 12ms
+[03:05:17.946] Server  LOG      ✓ Compiled in 63ms
+[03:06:01.337] Server  LOG      ✓ Compiled in 49ms
+[03:06:24.397] Server  LOG      ✓ Compiled in 35ms
+[03:08:38.639] Server  LOG      ✓ Compiled in 15ms
+[03:09:18.861] Server  LOG      ✓ Compiled in 13ms
+[03:09:40.818] Server  LOG      ✓ Compiled in 5ms
+[03:10:36.804] Server  LOG      ✓ Compiled in 19ms
+[03:10:57.146] Server  LOG      ✓ Compiled in 63ms
+[03:11:15.226] Server  LOG      ✓ Compiled in 29ms
+[03:12:14.398] Server  LOG      ✓ Compiled in 65ms
+[03:12:46.661] Server  LOG      ✓ Compiled in 33ms
+[03:13:41.231] Server  LOG      ✓ Compiled in 41ms
+[03:15:11.870] Server  LOG      ✓ Compiled in 46ms
+[03:15:36.669] Server  LOG      ✓ Compiled in 44ms
+[03:16:27.052] Server  LOG      ✓ Compiled in 47ms
+[03:17:06.240] Server  LOG      ✓ Compiled in 12ms
+[03:17:13.004] Server  LOG      ✓ Compiled in 4ms
+[03:23:21.531] Server  LOG      ✓ Compiled in 29ms
+[03:23:42.269] Server  LOG      ✓ Compiled in 6ms

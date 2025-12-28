@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/qp5/Desktop/Projects/1001/pages/_app.tsx"],"sourcesContent":["import type { AppProps } from \"next/app\"\nimport \"../styles/globals.css\"\n\nexport default function MyApp({ Component, pageProps }: AppProps) {\n  return <Component {...pageProps} />\n}\n"],"names":[],"mappings":";;;;;;;AAGe,SAAS,MAAM,EAAE,SAAS,EAAE,SAAS,EAAY;IAC9D,qBAAO,qKAAC;QAAW,GAAG,SAAS;;;;;;AACjC"}}]
+}

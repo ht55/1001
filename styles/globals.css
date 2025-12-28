@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow: hidden; /* 背景はスクロールさせない */
+}
+
+/* 背景 */
+.bg {
+  position: fixed;
+  inset: 0;
+  background-image: url("/images/circus1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 中央配置 */
+.content {
+  position: relative;
+  z-index: 1;
+  height: 105vh;
+  display: grid;
+  place-items: center;
+}
+
+/* すりガラスウィンドウ */
+.glass {
+  width: min(485px, 48.5vw);
+  max-height: 55vh;
+  padding: 2.5rem 2.8rem;
+
+  background: rgba(241, 240, 236, 0.523);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* ↓ 枠の肝 */
+  border-radius: 10px;
+  border: 6px solid #090704; /* 黒寄りの茶 */
+
+  /* 切り絵・ステンドグラス感 */
+  box-shadow:
+    0 0 0 2px #3a2a18 inset,
+    0 0 0 6px rgba(0, 0, 0, 0.915),
+    0 12px 30px rgba(0, 0, 0, 0.798);
+
+  overflow-y: auto;
+  color: #1a1208;
+
+  transform: translateY(-2.5%);
+}
+
+.glass {
+  /* 既存の設定はそのまま */
+
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 15.5px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+
+.glass h1,
+.glass h2 {
+  color: #040201;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin: 0em;
+}
+
+.glass h1 {
+  font-size: 26px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 2000;
+  margin-bottom: 0em;
+}
+
+.glass h2 {
+  font-size: 19px;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+}
+
+
+
