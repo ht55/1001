@@ -1,5 +1,6 @@
 // src/pages/story/index.tsx
 
+import { GeneratingOverlay } from "@/components/GeneratingOverlay"
 import { useState } from "react"
 
 import { characters } from "@/data/characters"
@@ -59,7 +60,14 @@ export default function StoryPage() {
         }
       : null
 
+  const [isGenerating, setIsGenerating] = useState(false)
+  
+
   async function handleGenerateStory() {
+    // 生成開始
+    setIsGenerating(true)
+
+    try {
     const apiKey = localStorage.getItem("openai_api_key")
 
     if ((mode === "llm" || mode === "faker_llm") && !apiKey) {
@@ -84,10 +92,18 @@ export default function StoryPage() {
 
     setGeneratedStory(result.text)
     setResultMetrics(result.metrics)
+    } catch (err) {
+      console.error(err)
+      alert("Story generation failed")
+    } finally {
+      setIsGenerating(false)
+    }
   }
 
   return (
     <>
+    <GeneratingOverlay visible={isGenerating} />
+
       {/* 背景（固定） */}
       <div className="bg" />
 
@@ -357,6 +373,12 @@ export default function StoryPage() {
                 物語を生成する
               </button>
             </section>
+          )}
+
+          {isGenerating && (
+            <div className="generating-overlay">
+              <div className="carousel" />
+            </div>
           )}
 
           {/* Result */}

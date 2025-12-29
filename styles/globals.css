@@ -83,5 +83,47 @@ body {
   margin-bottom: 0.8em;
 }
 
+.generating-overlay {
+  position: fixed;   
+  inset: 0;
+  z-index: 9999;
+
+  background: rgba(20, 12, 6, 0.55);
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+
+  animation: rotate 10s linear infinite;
+
+  /* ★ 透明度を場所で変える */
+  background: conic-gradient(
+    from 0deg,
+    rgba(220, 180, 120, 0.85),
+    rgba(120, 90, 50, 0.35),
+    rgba(40, 25, 10, 0.2),
+    rgba(120, 90, 50, 0.35),
+    rgba(220, 180, 120, 0.85)
+  );
+
+  filter: blur(0.3px);
+}
+
+.carousel {
+  mix-blend-mode: normal;
+  opacity: 0.95;
+}
 
 
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

@@ -64,4 +64,38 @@ body {
   font-size: 19px;
 }
 
+.generating-overlay {
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background: #140c068c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.carousel {
+  filter: blur(.3px);
+  mix-blend-mode: normal;
+  opacity: .95;
+  background: conic-gradient(#dcb478d9, #785a3259, #28190a33, #785a3259, #dcb478d9);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  animation: 10s linear infinite rotate;
+  position: relative;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=styles_globals_dc36e6c9.css.map*/
