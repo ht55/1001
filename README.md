@@ -123,22 +123,12 @@ This project is released under a **Custom Non-Commercial License**.
 If you wish to use this project commercially or beyond the scope of this
 license, please contact the author for permission.
 
+---
+
 ## In Japanese
-このプロジェクトでは、PythonライブラリのFakerと、文脈理解力の高さと若干の暴走性を持つLLMを合体させ、制約された変換の連鎖によって物語が立ち上がる過程を生成する装置を作成した。この装置では、キャラクター、テーマ、シチュエーション、ナラティブヴォイスを入力すると、内部でいくつかの抽象的な状態遷移が起こり、その結果として物語が出現する。このプロジェクトにおいて重要なのは、テキスト生成は最終段階であり、主役ではないという点である。
+このプロジェクトでは、PythonライブラリのFakerと、文脈理解力の高さと若干の暴走性を持つLLMを合体させ、制約された変換の連鎖によって物語が立ち上がる過程を生成する装置を作成した。この装置では、キャラクター、テーマ、シチュエーション、ナラティブボイス(語り口)を入力すると、内部でいくつかの抽象的な状態遷移が起こり、その結果として物語が出現する。このプロジェクトにおいて重要なのは、テキスト生成は最終段階であり、主役ではないという点である。
 
-まず物語とは「意味」「緊張」「歪み」「欠落」などの状態が、ある世界条件のもとで変化した結果であると仮定し、 抽象的な反応状態(Reaction Profile)を世界条件(Situation / WorldModifier)に通した構造を、数学的に以下のように二段階の反応(Sequential Reaction)と定義した。
-
-[Phase 1]
-
-**f : C × T → R**
-
-where C = set of characters, T = set of themes, R = reaction profile, with a piecewise stochastic function: f(c, m) = sample(R | rules(c,m), bias(c), ui(c,m))
-
-[Phase 2]
-
-**g : R × S → R' or R' = Ŝ (R)**, 
-
-where S = set of situations and `R'` = transformed reaction state. This design allows compositional chaining: (g ∘ f)(c, m, s)
+まず物語とは「意味」「緊張」「歪み」「欠落」などの状態が、ある世界条件のもとで変化した結果であると仮定し、 抽象的な反応状態(Reaction Profile)を世界条件(Situation / WorldModifier)に通した構造を、英語で前述したように数学的に二段階の反応(Sequential Reaction)と定義した。
 
 その上で、Python Fakerの持つランダム生成要素を最大化し、素材ライブラリx編集ロジックとしての役割を担わせ、物語構造(Source Story)、制約(ユーザーの選択する項目)、そして歪み(World Modifier)を確定させた。次にLLMを、既に確定した構造を翻訳するレンダラーとして扱い、表現・描写部分だけを担当させることで、あえて少しダーク＆不安定で、AIが「遊び始める余地」を残した物語の生成を目指した(ミヒャエル・エンデや稲垣足穂的なショートショート構造のようなものが理想系)。あくまでも結果より工程を重視した実験的要素の強い装置であるため、生成後の物語に若干の不自然さが感じられる場合もある。
 
