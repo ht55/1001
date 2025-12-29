@@ -2,29 +2,21 @@
 
 import type { Voice } from '@/types/voice'
 import {
-  neutral,
-  poetic,
-  melancholic,
-  cold,
-  scholarly,
-  mystic,
-  heroic,
-  childlike,
-  playful,
-  osaka_obahan
+ neutral,
+ emotional,   // 激情的
+ casual,      // チャラい
+ formal,      // お堅い
+ samurai,     // 侍言葉
+ osaka_obahan
 } from './index'
 
 export const voices: Voice[] = [
-  neutral,
-  poetic,
-  melancholic,
-  cold,
-  scholarly,
-  mystic,
-  heroic,
-  childlike,
-  playful,
-  osaka_obahan,
+ neutral,
+ emotional,   // 激情的
+ casual,      // チャラい
+ formal,      // お堅い
+ samurai,     // 侍言葉
+ osaka_obahan
 ]
 
 export const voicesById: Record<string, Voice> =

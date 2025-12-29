@@ -1,7 +1,7 @@
 // src/lib/buildStructualState.ts
 
 import type { StructuralFunction } from "@/data/sourceStories/types"
-import type { FunctionState } from "@/data/sourceStories/types"
+import type { FunctionState } from "@/types/FunctionState"
 
 export function buildStructuralState(
   functions: StructuralFunction[]
@@ -10,7 +10,7 @@ export function buildStructuralState(
     function: fn,
     weight: 1,
     polarity: 1,
-    active: true,
+    active: true
   }))
 }
 

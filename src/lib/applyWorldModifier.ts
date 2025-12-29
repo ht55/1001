@@ -1,6 +1,6 @@
 // src/lib/applyWorldModifier.ts
 
-import type { WorldModifier } from "@/types/worldModifier"
+import type { worldModifier } from "@/types/worldModifier"
 import type { ReactionAxis } from "@/types/reactionAxis"
 import type { StructuralState } from "@/types/StructuralState"
 import type { ReactionProfile } from "@/types/reactionProfile"
@@ -9,11 +9,11 @@ import type { ReactionProfile } from "@/types/reactionProfile"
 // 注意: ReactionProfile は「参照」するだけ, 文章量・ReactionProfile自体は変更しない
 export function applyWorldModifier(
   state: StructuralState,
-  modifier: WorldModifier,
+  modifier: worldModifier,
   reaction: ReactionProfile
 ): StructuralState {
   const functions = state.functions.map(fn => {
-    switch (modifier.type) {
+    switch (modifier.id) {
       case "inversion":
         return {
           ...fn,

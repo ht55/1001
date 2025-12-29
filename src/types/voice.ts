@@ -1,9 +1,10 @@
-import { VoiceKey } from "./voiceKeys"
+import { voiceKey } from "./voiceKeys"
 
 // src/types/voice.ts
 export type Voice = {
-  id: VoiceKey
+  id: voiceKey
   label: string
   keywords: string[]
   categoryID?: string
+  styleGuide?: string
 }

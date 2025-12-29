@@ -1,7 +1,7 @@
 // src/lib/applyWorldModifiersToStructure.ts
 
 import type { StructuralState } from "@/types/StructuralState"
-import type { WorldModifier, WorldModifierType } from "@/types/worldModifier"
+import type { worldModifier, WorldModifierType } from "@/types/worldModifier"
 import type { ReactionProfile } from "@/types/reactionProfile"
 import { applyWorldModifier } from "@/lib/applyWorldModifierToStructure"
 
@@ -9,7 +9,7 @@ import { applyWorldModifier } from "@/lib/applyWorldModifierToStructure"
 
 export function applyWorldModifiersToStructure(
   state: StructuralState,
-  modifiers: (WorldModifier & { id: WorldModifierType })[],
+  modifiers: (worldModifier & { id: WorldModifierType })[],
   reaction: ReactionProfile
 ): StructuralState {
   return modifiers.reduce(

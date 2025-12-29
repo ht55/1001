@@ -1,4 +1,5 @@
 // src/data/situationPresets.ts
+
 import { SituationPreset } from '@/situations'
 
 export const SITUATION_PRESETS: SituationPreset[] = [

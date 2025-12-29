@@ -2,17 +2,18 @@
 
 import type { AffinitySymbol } from "@/types/affinity"
 import type { StoryResult } from "@/types/storyResult"
-import type { SituationKey } from "@/types/situationKeys"
-import type { VoiceKey } from "@/types/voiceKeys"
+import type { situationKey } from "@/types/situationKeys"
+import type { voiceKey } from "@/types/voiceKeys"
 
 import { runWithFakerMode3 } from "@/lib/runWithFakerMode3"
 
 type RunStoryPipelineInput = {
   characterId: string
   themeId: string
-  situationId: SituationKey
-  voiceId: VoiceKey
+  situationId: situationKey
+  voiceId: voiceKey
   uiLevel: AffinitySymbol
+  apiKey: string 
 }
 
 export async function runStoryPipeline(
@@ -31,8 +32,9 @@ export async function runStoryPipeline(
     themeId,
     situationId,
     voiceId,
-    uiLevel,
-  })
+  },
+  input.apiKey 
+)
 
   return result
 }

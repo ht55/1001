@@ -1,6 +1,7 @@
 // src/lib/callOpenAI.ts
 
 type CallOpenAIArgs = {
+  apiKey: string
   system: string
   user: string
   temperature?: number
@@ -9,10 +10,10 @@ type CallOpenAIArgs = {
 export async function callOpenAI(
   args: CallOpenAIArgs
 ): Promise<string> {
-  const apiKey = process.env.OPENAI_API_KEY
+  const { apiKey, system, user, temperature } = args
 
-  if (!apiKey) {
-    throw new Error("OPENAI_API_KEY is not set")
+  if (!apiKey || !apiKey.startsWith("sk-")) {
+    throw new Error("Invalid OpenAI API key")
   }
 
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -22,11 +23,11 @@ export async function callOpenAI(
       Authorization: `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini", // 安定・高速・コスト低
-      temperature: args.temperature ?? 0.9,
+      model: "gpt-4o-mini",
+      temperature: temperature ?? 0.9,
       messages: [
-        { role: "system", content: args.system },
-        { role: "user", content: args.user },
+        { role: "system", content: system },
+        { role: "user", content: user },
       ],
     }),
   })
@@ -37,11 +38,9 @@ export async function callOpenAI(
   }
 
   const json = await res.json()
+  const content = json.choices?.[0]?.message?.content
 
-  const content =
-    json.choices?.[0]?.message?.content
-
-  if (!content || typeof content !== "string") {
+  if (typeof content !== "string") {
     throw new Error("Invalid OpenAI response format")
   }
 

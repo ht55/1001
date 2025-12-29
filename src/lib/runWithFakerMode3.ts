@@ -12,7 +12,8 @@ import { buildPromptSchema } from "@/lib/buildPromptSchema"
 import { runWithLLM } from "@/lib/runWithLLM"
 
 export async function runWithFakerMode3(
-  snapshot: StoryContextSnapshot
+  snapshot: StoryContextSnapshot,
+  apiKey: string
 ): Promise<StoryResult> {
 
   // 0) resolve
@@ -49,21 +50,13 @@ export async function runWithFakerMode3(
     characterLabel: resolved.character.label,
     themeLabel: resolved.theme.label,
     situationLabel: resolved.situation.label,
-    voiceLabel: resolved.voice.label,
+    voice: resolved.voice,
     worldModifiers,
     targetLength: "1500-3000",
   })
 
   // 5) LLM
-  const text = await runWithLLM({
-    meta: { language: "ja" },
-    template: {
-      length: { min: 1500, max: 3000 }
-    },
-    core: { prompt },
-    phase1: {},
-    phase2: {},
-  } as any)
+const text = await runWithLLM(prompt, apiKey)
 
   return {
     text,

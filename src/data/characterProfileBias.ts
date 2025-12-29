@@ -1,4 +1,5 @@
 // src/data/characterProfileBias.ts
+
 import { ReactionAxis } from "@/types/reactionAxis"
 
 export const characterProfileBias: Record<string, ReactionAxis[]> = {

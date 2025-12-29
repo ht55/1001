@@ -1,8 +1,5 @@
 // src/components/metrics/MetricsPanel.tsx
 
-// src/components/metrics/MetricsPanel.tsx
-// 完全版（翻訳・表示これで終了）
-
 import { ReferencePanel } from "@/components/common/ReferencePanel"
 import type { StoryMetrics } from "@/lib/collectMetrics"
 
@@ -20,7 +17,7 @@ export function MetricsPanel({ metrics }: { metrics: StoryMetrics }) {
           <strong>適用された世界修飾子：</strong>
           {metrics.appliedModifiers.length
             ? metrics.appliedModifiers
-                .map(m => worldModifierLabelMap[m])
+                .map(m => worldModifierLabelMap[m.id])
                 .join(", ")
             : "なし"}
         </div>

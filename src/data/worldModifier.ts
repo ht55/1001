@@ -1,8 +1,8 @@
 // src/data/worldModifier.ts  
 
-import type { WorldModifier } from "@/types/worldModifier"
+import type { worldModifier } from "@/types/worldModifier"
 
-export const WORLD_MODIFIERS: readonly WorldModifier[] = [
+export const WORLD_MODIFIERS: readonly worldModifier[] = [
   {
     id: "distortion",
     label: "歪曲",

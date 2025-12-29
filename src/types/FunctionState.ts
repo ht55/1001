@@ -1,5 +1,9 @@
+// src/types/FunctionState.ts
+
+import type { StructuralFunction } from "@/data/sourceStories/types"
+
 export type FunctionState = {
-  function: string
+  function: StructuralFunction   
   weight: number
   polarity: number
   active: boolean

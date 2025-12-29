@@ -1,7 +1,7 @@
 // src/lib/constraints/normalizeMode3.ts
 
-import type { SituationKey } from "@/types/situationKeys"
-import type { VoiceKey } from "@/types/voiceKeys"
+import type { situationKey } from "@/types/situationKeys"
+import type { voiceKey } from "@/types/voiceKeys"
 
 import { resolveStoryContext } from "@/lib/resolveStoryContext"
 import { selectSourceStory } from "@/lib/selectSourceStory"
@@ -13,8 +13,8 @@ import { buildPromptSchema } from "@/lib/buildPromptSchema"
 type Mode3Input = {
   characterId: string
   themeId: string
-  situationId: SituationKey
-  voiceId: VoiceKey
+  situationId: situationKey
+  voiceId: voiceKey
 }
 
 export function normalizeMode3(
@@ -26,7 +26,7 @@ export function normalizeMode3(
     themeId: input.themeId,
     situationId: input.situationId,
     voiceId: input.voiceId,
-    uiLevel: 0, // ← Mode3では未使用・ダミー
+
   })
 
   // 2) Reaction
@@ -59,7 +59,7 @@ export function normalizeMode3(
     characterLabel: resolved.character.label,
     themeLabel: resolved.theme.label,
     situationLabel: resolved.situation.label,
-    voiceLabel: resolved.voice.label,
+    voice: resolved.voice,
     worldModifiers,
     targetLength: undefined, // ← Mode3では使わない
   })

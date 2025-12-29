@@ -12,7 +12,7 @@ export type WorldModifierType =
   | "observer_bias"
   | "emergent_possibility"
 
-export interface WorldModifier {
+export interface worldModifier {
   id: WorldModifierType      
   label: string
   description?: string

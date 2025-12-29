@@ -1,8 +1,8 @@
 // src/components/affinity/AffinityMatrix.tsx
 
 import React from 'react'
-import type { VoiceKey } from "@/types/voiceKeys"
-import type { SituationKey } from "@/types/situationKeys"
+import type { voiceKey } from "@/types/voiceKeys"
+import type { situationKey } from "@/types/situationKeys"
 import type { AffinityMap } from "@/affinities/affinityMap"
 
 import strongIcon from '@/affinities/icons/strong.png'
@@ -11,8 +11,8 @@ import mismatchIcon from '@/affinities/icons/mismatch.png'
 
 type Props = {
   map: AffinityMap
-  selectedSituation?: SituationKey | null
-  selectedVoice?: VoiceKey | null
+  selectedSituation?: situationKey | null
+  selectedVoice?: voiceKey | null
   situationLabelMap: Record<string, string>
   voiceLabelMap: Record<string, string>
 }
@@ -23,10 +23,10 @@ const ICON_MAP = {
   '△': mismatchIcon.src,
 }
 
-const VOICE_FIRST: VoiceKey = 'neutral'
-const VOICE_LAST: VoiceKey = 'osaka_obahan'
+const VOICE_FIRST: voiceKey = 'neutral'
+const VOICE_LAST: voiceKey = 'osaka_obahan'
 
-const sortVoices = (voices: VoiceKey[]) => {
+const sortVoices = (voices: voiceKey[]) => {
   const core = voices.filter(v => v !== VOICE_FIRST && v !== VOICE_LAST)
   return [
     ...(voices.includes(VOICE_FIRST) ? [VOICE_FIRST] : []),
@@ -42,11 +42,11 @@ export default function AffinityMatrix({
   situationLabelMap,
   voiceLabelMap,
 }: Props) {
-  const situations = Object.keys(map) as SituationKey[]
+  const situations = Object.keys(map) as situationKey[]
   if (situations.length === 0) return null
 
   const voices = sortVoices(
-    Object.keys(map[situations[0]] ?? {}) as VoiceKey[]
+    Object.keys(map[situations[0]] ?? {}) as voiceKey[]
   )
 
   return (

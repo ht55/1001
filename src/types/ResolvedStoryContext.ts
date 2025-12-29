@@ -1,5 +1,7 @@
 // src/types/ResolvedStoryContext.ts
 
+import type { Voice } from "@/types/voice"
+
 export type ResolvedStoryContext = {
   character: {
     id: string
@@ -14,8 +16,6 @@ export type ResolvedStoryContext = {
     id: string
     label: string
   }
-  voice: {
-    id: string
-    label: string
-  }
+  voice: Voice 
+  
 }

@@ -1,3 +1,5 @@
+// src/components/situation/SituationSelector.tsx
+
 import { SITUATION_PRESETS } from "@/data/situationPresets";
 import {
   situationCategories,

@@ -4,7 +4,6 @@ import { StoryContextInput } from "@/types/StoryContextInput"
 import { getReactionProfile } from "@/lib/getReactionProfile"
 import { applyTransition } from "@/lib/applyTransition"
 import { pickExpressionGate } from "@/lib/pickExpressionGate"
-import { characterSenseSemantics } from "@/data/characterSenseSemantics"
 import { getDominantAxis } from "@/lib/getDominantAxis"
 import type { StoryConstraints } from "./constraints.schema"
 
@@ -52,13 +51,6 @@ export function buildConstraints(input: StoryContextInput): StoryConstraints {
     expression: {
       entry,
       axisLockTarget: "world_attribute"
-    },
-
-    semantics: {
-      characterSense:
-        entry.kind === "sense"
-          ? characterSenseSemantics[input.characterId]?.[entry.sense]
-          : null
     },
 
     template: {

@@ -1,20 +1,18 @@
 // src/lib/collectMetrics.ts
 
-import type {
-  StructuralState,
-  WorldModifier,
-} from "@/data/sourceStories/types"
+import type { StructuralState } from "@/types/StructuralState"
+import type { worldModifier } from "@/types/worldModifier"
 
 export type StoryMetrics = {
   inactiveCount: number
   invertedCount: number
   avgWeight: number
-  appliedModifiers: WorldModifier[]
+  appliedModifiers: worldModifier[]
 }
 
 export function collectMetrics(
   state: StructuralState,
-  modifiers: WorldModifier[]
+  modifiers: worldModifier[]
 ): StoryMetrics {
   const { functions } = state
 

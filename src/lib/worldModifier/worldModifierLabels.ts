@@ -1,6 +1,8 @@
-import type { WorldModifier } from "@/data/sourceStories/types"
+// src/lib/worldModifier/worldModifierLabels.ts
 
-export const worldModifierLabelMap: Record<WorldModifier, string> = {
+import type { WorldModifierType } from "@/types/worldModifier"
+
+export const worldModifierLabelMap: Record<WorldModifierType, string> = {
   distortion: "歪曲",
   inversion: "反転",
   fixation: "固着",

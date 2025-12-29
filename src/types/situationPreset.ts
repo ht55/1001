@@ -1,4 +1,5 @@
 // src/types/situationPreset.ts
+
 export interface SituationPreset {
   id: string
   label: string

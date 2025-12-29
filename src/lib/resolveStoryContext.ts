@@ -30,9 +30,6 @@ export function resolveStoryContext(
       id: snapshot.situationId,
       label: situation.label,
     },
-    voice: {
-      id: snapshot.voiceId,
-      label: voice.label,
-    },
+    voice: voice
   }
 }

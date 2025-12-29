@@ -1,8 +1,11 @@
+// src/lib/buildPlammedMetrics.ts
+
 import type { ReactionProfile } from "@/types/reactionProfile"
-import type { WorldModifier, StructuralFunction } from "@/data/sourceStories/types"
+import type { worldModifier } from "@/types/worldModifier"
+import type { StructuralFunction } from "@/data/sourceStories/types"
 
 export type PlannedMetrics = {
   requiredFunctions: StructuralFunction[]
-  plannedModifiers: WorldModifier[]
+  plannedModifiers: worldModifier[]
   reactionProfile: ReactionProfile
 }

@@ -1,7 +1,7 @@
 // types/storyResult.ts
 
 import type { StructuralState } from "@/types/StructuralState"
-import type { WorldModifier } from "@/types/worldModifier"
+import type { worldModifier } from "@/types/worldModifier"
 import type { ReactionProfile } from "@/types/reactionProfile"
 
 export type StoryResult = {
@@ -12,6 +12,6 @@ export type StoryResult = {
   // ↓ Mode3 用（Faker内部状態・任意）
   sourceId?: string
   structuralState?: StructuralState
-  worldModifiers?: WorldModifier[]
+  worldModifiers?: worldModifier[]
   reactionProfile?: ReactionProfile
 }

@@ -23,5 +23,5 @@ export const situationKeys = [
   'infinite_labyrinth',
 ] as const
 
-export type SituationKey = typeof situationKeys[number]
+export type situationKey = typeof situationKeys[number]
 

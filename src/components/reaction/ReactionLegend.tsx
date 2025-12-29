@@ -1,3 +1,5 @@
+// src/components/reaction/ReactionLegend.tsx
+
 const REACTIONS = [
   { key: "resonance", label: "Resonance", color: "220" },      // blue
   { key: "tension", label: "Tension", color: "30" },          // orange

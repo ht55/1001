@@ -1,12 +1,12 @@
 // src/lib/applyWorldModifierToStructure.ts
 
 import type { StructuralState } from "@/types/StructuralState"
-import type { WorldModifier, WorldModifierType } from "@/types/worldModifier"
+import type { worldModifier, WorldModifierType } from "@/types/worldModifier"
 import type { ReactionProfile } from "@/types/reactionProfile"
 
 export function applyWorldModifier(
   state: StructuralState,
-  modifier: WorldModifier,
+  modifier: worldModifier,
   modifierId: WorldModifierType, // ← 追加（1点）
   reaction: ReactionProfile
 ): StructuralState {

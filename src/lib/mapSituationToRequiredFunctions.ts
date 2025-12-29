@@ -1,8 +1,10 @@
+// src/lib/mapSituationToRequiredFunctions.ts
+
 import type { StructuralFunction } from "@/data/sourceStories/types"
-import type { SituationKey } from "@/types/situationKeys"
+import type { situationKey } from "@/types/situationKeys"
 
 export function mapSituationToRequiredFunctions(
-  situationId: SituationKey
+  situationId: situationKey
 ): StructuralFunction[] {
   switch (situationId) {
     case "circus":

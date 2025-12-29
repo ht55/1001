@@ -1,3 +1,5 @@
+// src/types/reactionAxis.ts
+
 export type ReactionAxis =
   | "resonance"
   | "tension"

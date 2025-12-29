@@ -1,3 +1,5 @@
+// src/lib/resolveSituation.ts
+
 import { SITUATION_PRESETS } from "@/data/situationPresets"
 
 export function resolveSituation(situationId: string) {

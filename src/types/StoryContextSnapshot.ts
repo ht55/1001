@@ -1,13 +1,13 @@
 // src/types/StoryContextSnapshot.ts
 
-import type { SituationKey } from "@/types/situationKeys"
-import type { VoiceKey } from "@/types/voiceKeys"
+import type { situationKey } from "@/types/situationKeys"
+import type { voiceKey } from "@/types/voiceKeys"
 import type { ReactionProfile } from "@/types/reactionProfile"
 
 export type StoryContextSnapshot = {
   characterId: string
   themeId: string
-  situationId: SituationKey
-  voiceId: VoiceKey
+  situationId: situationKey
+  voiceId: voiceKey
   reactionProfile?: ReactionProfile
 }

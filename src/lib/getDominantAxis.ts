@@ -1,4 +1,5 @@
 // src/lib/getDominantAxis.ts
+
 import { ReactionProfile, ReactionAxis } from "@/types/reactionProfile"
 
 export function getDominantAxis(profile: ReactionProfile): ReactionAxis {

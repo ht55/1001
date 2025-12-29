@@ -10,7 +10,6 @@ export function buildStoryContextSnapshot(
     characterId: input.characterId,
     themeId: input.themeId,
     situationId: input.situationId,
-    voiceId: input.voiceId,
-    uiLevel: input.uiLevel,
+    voiceId: input.voiceId
   }
 }

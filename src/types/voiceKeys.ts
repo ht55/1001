@@ -2,15 +2,12 @@
 
 export const voiceKeys = [
   'neutral',
-  'poetic',
-  'melancholic',
-  'cold',
-  'scholarly',
-  'mystic',
-  'heroic',
-  'childlike',
-  'playful',
+  'neutral',
+  'emotional',   // 激情的
+  'casual',      // チャラい
+  'formal',      // お堅い
+  'samurai',     // 侍言葉
   'osaka_obahan'
 ] as const
 
-export type VoiceKey = typeof voiceKeys[number]
+export type voiceKey = typeof voiceKeys[number]

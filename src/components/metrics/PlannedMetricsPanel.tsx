@@ -28,7 +28,7 @@ export function PlannedMetricsPanel({ data }: { data: PlannedMetrics }) {
           <strong>世界修飾子：</strong>
           {data.plannedModifiers.length
             ? data.plannedModifiers
-                .map(m => worldModifierLabelMap[m])
+                .map(m => worldModifierLabelMap[m.id])
                 .join(", ")
             : "なし"}
         </div>
