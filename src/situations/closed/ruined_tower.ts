@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const ruined_tower: Situation = {
+export const ruined_tower: situation = {
   id: "ruined_tower",
   categoryId: "closed",
   label: "朽ちた塔",

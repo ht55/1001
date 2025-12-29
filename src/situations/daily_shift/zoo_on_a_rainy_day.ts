@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const zoo_on_a_rainy_day: Situation = {
+export const zoo_on_a_rainy_day: situation = {
   id: "zoo_on_a_rainy_day",
   categoryId: "daily_shift",
   label: "雨の日の動物園",

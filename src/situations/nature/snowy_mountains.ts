@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const snowy_mountains: Situation = {
+export const snowy_mountains: situation = {
   id: "snowy_mountains",
   categoryId: "nature",
   label: "雪山",

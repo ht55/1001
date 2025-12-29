@@ -1,7 +1,8 @@
+// src/types/voice.ts
+
 import { voiceKey } from "./voiceKeys"
 
-// src/types/voice.ts
-export type Voice = {
+export type voice = {
   id: voiceKey
   label: string
   keywords: string[]

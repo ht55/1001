@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const room_all_to_oneself: Situation = {
+export const room_all_to_oneself: situation = {
   id: "room_all_to_oneself",
   categoryId: "closed",
   label: "一人きりの部屋",

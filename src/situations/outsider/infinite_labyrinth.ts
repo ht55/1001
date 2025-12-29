@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const infinite_labyrinth: Situation = {
+export const infinite_labyrinth: situation = {
   id: "infinite_labyrinth",
   categoryId: "outsider",
   label: "無限の迷宮",

@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const tropical_beach: Situation = {
+export const tropical_beach: situation = {
   id: "tropical_beach",
   categoryId: "nature",
   label: "異国のビーチ",

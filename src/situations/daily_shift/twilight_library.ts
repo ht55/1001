@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const twilight_library: Situation = {
+export const twilight_library: situation = {
   id: "twilight_library",
   categoryId: "daily_shift",
   label: "夕暮れの図書館",

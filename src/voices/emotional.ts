@@ -1,6 +1,6 @@
-import { Voice } from '@/types/voice'
+import { voice } from '@/types/voice'
 
-export const emotional: Voice = {
+export const emotional: voice = {
   id: "emotional",
   label: "激情的",
   keywords: ["emotional", "dramatic", "intense", "expressive"],

@@ -1,6 +1,6 @@
-import { Voice } from '@/types/voice'
+import { voice } from '@/types/voice'
 
-export const neutral: Voice = {
+export const neutral: voice = {
   id: "neutral",
   label: "ニュートラル",
   keywords: ["neutral", "balanced", "plain"],

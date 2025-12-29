@@ -1,10 +1,370 @@
-[00:00:00.851] Server  LOG      ✓ Ready in 590ms
-[00:07:59.024] Server  LOG      ✓ Compiled in 45ms
-[00:08:08.264] Browser ERROR   unhandledRejection: TypeError: undefined is not an object (evaluating 'p.voice.label')
-[00:09:39.498] Server  LOG      ✓ Compiled in 41ms
-[00:12:27.116] Server  LOG      ✓ Compiled in 39ms
-[06:47:18.909] Server  LOG      ✓ Compiled in 71ms
-[07:05:11.860] Server  LOG      ✓ Compiled in 52ms
-[07:09:26.519] Server  LOG      ✓ Compiled in 53ms
-[07:10:10.091] Server  LOG      ✓ Compiled in 35ms
-[08:08:33.214] Server  LOG      ✓ Compiled in 163ms
+[00:00:00.926] Server  LOG      ✓ Ready in 649ms
+[00:01:18.214] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.216] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.216] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.216] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.217] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.219] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.219] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.219] Server  ERROR    ⨯ ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:18.237] Server  LOG      ✓ Compiled in 112ms
+[00:01:18.345] Browser ERROR   ./src/situations/index.ts:13:1
+Module not found: Can't resolve './situationMap'
+  11 | export * from './outsider'
+  12 |
+> 13 | export { situationsById } from "./situationMap"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Import traces:
+  #1 [Browser]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #2 [SSR]:
+    ./src/situations/index.ts
+    ./src/utils/situationLabelMap.ts
+    ./pages/story/index.tsx
+
+  #3 [Browser]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  #4 [SSR]:
+    ./src/situations/index.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:20.787] Server  LOG      ✓ Compiled in 32ms
+[00:07:03.980] Server  LOG      ✓ Compiled in 72ms
+[00:07:04.086] Browser ERROR   ./src/situations/situationMap.ts:3:1
+Export situation doesn't exist in target module
+  1 | import type { situationPreset } from '@/types/situationPreset'
+  2 | import type { situationKey } from '@/types/situationKeys'
+> 3 | import { situation } from './situationCategories'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const situationsById: Record<situationKey, situationPreset> =
+  6 |   Object.fromEntries(
+
+The export situation was not found in module [project]/src/situations/situationCategories.ts [client] (ecmascript).
+Did you mean to import situations?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Browser:
+    ./src/situations/situationMap.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  SSR:
+    ./src/situations/situationMap.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+[00:07:04.086] Browser ERROR   ./src/situations/situationMap.ts:3:1
+Export situation doesn't exist in target module
+  1 | import type { situationPreset } from '@/types/situationPreset'
+  2 | import type { situationKey } from '@/types/situationKeys'
+> 3 | import { situation } from './situationCategories'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const situationsById: Record<situationKey, situationPreset> =
+  6 |   Object.fromEntries(
+
+The export situation was not found in module [project]/src/situations/situationCategories.ts [ssr] (ecmascript).
+Did you mean to import situations?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Browser:
+    ./src/situations/situationMap.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+
+  SSR:
+    ./src/situations/situationMap.ts
+    ./src/lib/resolveStoryContext.ts
+    ./src/lib/runWithFakerMode3.ts
+    ./pages/story/index.tsx
+[00:07:07.065] Server  LOG      ✓ Compiled in 26ms
+[00:07:46.198] Server  LOG      ✓ Compiled in 50ms
+[00:15:07.252] Server  LOG      ✓ Compiled in 31ms

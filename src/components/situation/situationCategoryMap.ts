@@ -1,10 +1,10 @@
 // src/components/situation/situationCategoryMap.ts
 
-import { SituationCategoryID } from "@/situations/situationCategories";
+import { situationCategoryId } from "@/situations/situationCategories";
 
 export const situation_category_map: Record<
   string,
-  SituationCategoryID
+  situationCategoryId
 > = {
   // 人の集まる場所
   circus: "crowded",

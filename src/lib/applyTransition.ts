@@ -1,13 +1,13 @@
 // src/lib/applyTransition.ts
 
 import { ReactionAxis } from "@/types/reactionProfile"
-import { SituationCategory } from "@/types/situationCategory"
-
 
 export function applyTransition(
   profile: ReactionAxis,
   _situationId: string
 ) {
+  void _situationId
+
   switch (profile) {
     case "distortion":
       return "destabilize"

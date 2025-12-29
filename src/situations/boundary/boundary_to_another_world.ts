@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const boundary_to_another_world: Situation = {
+export const boundary_to_another_world: situation = {
   id: "boundary_to_another_world",
   categoryId: "boundary",
   label: "異界との狭間",

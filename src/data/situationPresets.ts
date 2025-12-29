@@ -1,8 +1,8 @@
 // src/data/situationPresets.ts
 
-import { SituationPreset } from '@/situations'
+import { situationPreset } from '@/situations'
 
-export const SITUATION_PRESETS: SituationPreset[] = [
+export const SITUATION_PRESETS: situationPreset[] = [
   // 1. 人の集う場所
   {
     id: "circus",

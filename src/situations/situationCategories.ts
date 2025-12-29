@@ -32,7 +32,15 @@ import { artificial_garden } from './daily_shift/artificial_garden'
 // Outsider
 import { infinite_labyrinth } from './outsider/infinite_labyrinth'
 
-import type { situationPreset } from '@/types/situationPreset'
+import type { situation } from '@/types/situation'
+
+type SituationCategory = {
+  id: string
+  label: string
+  categoryId: string
+  situations: readonly situation[]
+  notes?: string
+}
 
 export const situationCategories = [
   {
@@ -99,5 +107,5 @@ export type situationCategoryId =
 /**
  * UI / Matrix 用フラット配列
  */
-export const situations: situationPreset[] =
+export const situations: situation[] =
   situationCategories.flatMap(c => c.situations)

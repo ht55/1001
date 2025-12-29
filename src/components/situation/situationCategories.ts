@@ -9,11 +9,11 @@ export const situation_category_order = [
   "outsider",
 ] as const;
 
-export type SituationCategoryID =
+export type situationCategoryId =
   typeof situation_category_order[number];
 
 export const situationCategories: Record<
-  SituationCategoryID,
+  situationCategoryId,
   { label: string; description?: string }
 > = {
   crowded: {

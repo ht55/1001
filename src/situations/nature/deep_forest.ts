@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const deep_forest: Situation = {
+export const deep_forest: situation = {
   id: "deep_forest",
   categoryId: "nature",
   label: "深い森",

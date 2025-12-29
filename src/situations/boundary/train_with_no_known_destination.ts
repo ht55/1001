@@ -1,8 +1,8 @@
 // src/situations/boundary/train_with_no_known_destination.ts
 
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const train_with_no_known_destination: Situation = {
+export const train_with_no_known_destination: situation = {
   id: "train_with_no_known_destination",
   categoryId: "boundary",
   label: "誰も行き先を知らない列車",

@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const steampunk_planet: Situation = {
+export const steampunk_planet: situation = {
   id: "steampunk_planet",
   categoryId: "boundary",
   label: "スチームパンクの惑星",

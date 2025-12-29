@@ -1,6 +1,6 @@
 // src/voices/voiceList.ts
 
-import type { Voice } from '@/types/voice'
+import type { voice } from '@/types/voice'
 import {
  neutral,
  emotional,   // 激情的
@@ -10,7 +10,7 @@ import {
  osaka_obahan
 } from './index'
 
-export const voices: Voice[] = [
+export const voices: voice[] = [
  neutral,
  emotional,   // 激情的
  casual,      // チャラい
@@ -19,5 +19,5 @@ export const voices: Voice[] = [
  osaka_obahan
 ]
 
-export const voicesById: Record<string, Voice> =
+export const voicesById: Record<string, voice> =
   Object.fromEntries(voices.map(v => [v.id, v]))

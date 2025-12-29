@@ -1,6 +1,6 @@
-import { Voice } from '@/types/voice'
+import { voice } from '@/types/voice'
 
-export const samurai: Voice = {
+export const samurai: voice = {
   id: "samurai",
   label: "侍",
   keywords: ["samurai", "archaic", "formal speech"],

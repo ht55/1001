@@ -1,6 +1,6 @@
-import { Voice } from '@/types/voice'
+import { voice } from '@/types/voice'
 
-export const casual: Voice = {
+export const casual: voice = {
   id: "casual",
   label: "チャラい",
   keywords: ["casual", "light", "playful", "informal"],

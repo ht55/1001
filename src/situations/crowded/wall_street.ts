@@ -1,6 +1,6 @@
-import { Situation } from "@/types/situation";
+import { situation } from "@/types/situation";
 
-export const wall_street: Situation = {
+export const wall_street: situation = {
   id: "wall_street",
   categoryId: "crowded",
   label: "NYのウォール街",

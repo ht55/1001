@@ -1,6 +1,6 @@
-import { Voice } from '@/types/voice'
+import { voice } from '@/types/voice'
 
-export const osaka_obahan: Voice = {
+export const osaka_obahan: voice = {
   id: "osaka_obahan",
   label: "大阪のオバハン",
   keywords: ["kansai dialect", "direct", "emotional", "humorous", "streetwise"],

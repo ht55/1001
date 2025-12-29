@@ -2,14 +2,14 @@
 
 import type { worldModifier } from "@/types/worldModifier"
 import type { SourceStory } from "@/data/sourceStories/types"
-import type { Voice } from "@/types/voice"
+import type { voice } from "@/types/voice"
 
 type Params = {
   sourceStory: SourceStory
   characterLabel: string
   themeLabel: string
   situationLabel: string
-  voice: Voice
+  voice: voice
   worldModifiers: worldModifier[]
   targetLength?: string
 }
