@@ -2,5 +2,5 @@
 
 import { situationCategories } from "@/situations/situationCategories"
 
-export type SituationCategory =
+export type situationCategory =
   typeof situationCategories[number]["categoryId"]

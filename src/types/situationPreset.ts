@@ -1,6 +1,6 @@
 // src/types/situationPreset.ts
 
-export interface SituationPreset {
+export interface situationPreset {
   id: string
   label: string
   sceneId: string

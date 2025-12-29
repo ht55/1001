@@ -1,6 +1,6 @@
 // src/types/situation.ts
 
-export interface Situation {
+export interface situation {
   id: string;
   categoryId: string;
   label: string;
