@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const deep_forest: SemanticMotif = {
+export const deep_forest: Situation = {
   id: "deep_forest",
   categoryId: "nature",
   label: "深い森",

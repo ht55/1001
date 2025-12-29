@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const neon_district: SemanticMotif = {
+export const neon_district: Situation = {
   id: "neon_district",
   categoryId: "crowded",
   label: "ネオン街",

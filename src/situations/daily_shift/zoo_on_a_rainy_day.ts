@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const zoo_on_a_rainy_day: SemanticMotif = {
+export const zoo_on_a_rainy_day: Situation = {
   id: "zoo_on_a_rainy_day",
   categoryId: "daily_shift",
   label: "雨の日の動物園",

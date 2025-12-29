@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const infinite_labyrinth: SemanticMotif = {
+export const infinite_labyrinth: Situation = {
   id: "infinite_labyrinth",
   categoryId: "outsider",
   label: "無限の迷宮",

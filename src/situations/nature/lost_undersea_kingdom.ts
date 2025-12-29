@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const lost_undersea_kingdom: SemanticMotif = {
+export const lost_undersea_kingdom: Situation = {
   id: "lost_undersea_kingdom",
   categoryId: "nature",
   label: "失われた海底王国",

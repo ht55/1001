@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const steampunk_planet: SemanticMotif = {
+export const steampunk_planet: Situation = {
   id: "steampunk_planet",
   categoryId: "boundary",
   label: "スチームパンクの惑星",

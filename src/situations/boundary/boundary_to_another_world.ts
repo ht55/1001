@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const boundary_to_another_world: SemanticMotif = {
+export const boundary_to_another_world: Situation = {
   id: "boundary_to_another_world",
   categoryId: "boundary",
   label: "異界との狭間",

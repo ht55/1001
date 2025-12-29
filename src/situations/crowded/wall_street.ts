@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const wall_street: SemanticMotif = {
+export const wall_street: Situation = {
   id: "wall_street",
   categoryId: "crowded",
   label: "NYのウォール街",

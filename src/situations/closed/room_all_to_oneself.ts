@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const room_all_to_oneself: SemanticMotif = {
+export const room_all_to_oneself: Situation = {
   id: "room_all_to_oneself",
   categoryId: "closed",
   label: "一人きりの部屋",

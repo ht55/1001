@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const twilight_library: SemanticMotif = {
+export const twilight_library: Situation = {
   id: "twilight_library",
   categoryId: "daily_shift",
   label: "夕暮れの図書館",

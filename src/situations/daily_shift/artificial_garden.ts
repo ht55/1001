@@ -1,6 +1,6 @@
-import { SemanticMotif } from "@/semantic/semanticMotifs";
+import { Situation } from "@/types/situation";
 
-export const artificial_garden: SemanticMotif = {
+export const artificial_garden: Situation = {
   id: "artificial_garden",
   categoryId: "fantasy_cosmos",
   label: "人工庭園",

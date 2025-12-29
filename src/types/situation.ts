@@ -2,7 +2,7 @@
 
 export interface Situation {
   id: string;
-  categoryID: string;
+  categoryId: string;
   label: string;
   keywords: string[];
 }
