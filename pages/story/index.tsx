@@ -1,23 +1,23 @@
 // src/pages/story/index.tsx
 
-import { useEffect, useState } from "react";
+import { useState } from "react"
 
 import { characters } from "@/data/characters"
 import { themes } from "@/themes"
 import { voices } from "@/voices"
 
 import type { Theme } from "@/types/theme"
-import type { VoiceKey } from "@/types/voiceKeys"
-import type { SituationKey } from "@/types/situationKeys"
+import type { voiceKey } from "@/types/voiceKeys"
+import type { situationKey } from "@/types/situationKeys"
 import { AffinitySymbol } from "@/types/affinity"
 
-import { VoiceCard } from "@/components/voice/VoiceCard"
 import AffinityMatrix from "@/components/affinity/AffinityMatrix"
 import { CharacterThemeMatrix } from "@/components/reaction/CharacterThemeMatrix"
 import ReactionSituationMatrix from "@/components/reaction/ReactionSituationMatrix"
 import { ReferencePanel } from "@/components/common/ReferencePanel"
 import { PlannedMetricsPanel } from "@/components/metrics/PlannedMetricsPanel"
 import { MetricsPanel } from "@/components/metrics/MetricsPanel"
+import { OpenAIKeyInput } from "@/components/OpenAIKeyInput"
 
 import { affinityMap } from "@/affinities/affinityMap"
 import { SITUATION_PRESETS } from "@/data/situationPresets"
@@ -27,48 +27,43 @@ import { voiceLabelMap } from "@/utils/voiceLabelMap"
 import { getReactionProfile } from "@/lib/getReactionProfile"
 import { mapSituationToWorldModifiers } from "@/lib/mapSituationToWorldModifiers"
 import { mapSituationToRequiredFunctions } from "@/lib/mapSituationToRequiredFunctions"
+import { normalizeMode3 } from "@/lib/constraints/normalizeMode3"
+import { runWithLLM } from "@/lib/runWithLLM"
 
 import type { StoryMetrics } from "@/lib/collectMetrics"
+import { runWithFakerMode3 } from "@/lib/runWithFakerMode3"
 
 export default function StoryPage() {
- const [selectedTheme, setSelectedTheme] = useState<Theme | null>(null)
- const [selectedSituation, setSelectedSituation] = useState<SituationKey | null>(null)
- const [selectedVoice, setSelectedVoice] = useState<VoiceKey | null>(null)
- const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null)
+  const [selectedTheme, setSelectedTheme] = useState<Theme | null>(null)
+  const [selectedSituation, setSelectedSituation] = useState<situationKey | null>(null)
+  const [selectedVoice, setSelectedVoice] = useState<voiceKey | null>(null)
+  const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null)
 
- const [generatedStory, setGeneratedStory] = useState("")
- const [resultMetrics, setResultMetrics] = useState<StoryMetrics | null>(null)
+  const [generatedStory, setGeneratedStory] = useState("")
+  const [resultMetrics, setResultMetrics] = useState<StoryMetrics | null>(null)
 
- const [mode, setMode] = useState<"faker" | "llm" | "faker_llm">("faker")
- const [showApiKeyPopup, setShowApiKeyPopup] = useState(false)
+  const [mode, setMode] = useState<"faker" | "llm" | "faker_llm">("faker")
 
- const hasApiKey =
- process.env.NEXT_PUBLIC_HAS_OPENAI_KEY === "true"
+  // ===== 生成前 Metrics（表示専用）=====
+  const reactionProfile =
+    selectedCharacter && selectedTheme
+      ? getReactionProfile(selectedCharacter, selectedTheme.id)
+      : null
 
- const MODES = [
- { id: "faker", label: "Faker Only", locked: false },
- { id: "llm", label: "LLM Only", locked: !hasApiKey },
- { id: "faker_llm", label: "Faker × LLM", locked: !hasApiKey },
- ] as const
+  const plannedMetrics =
+    selectedSituation && reactionProfile
+      ? {
+          requiredFunctions: mapSituationToRequiredFunctions(selectedSituation),
+          plannedModifiers: mapSituationToWorldModifiers(selectedSituation, reactionProfile),
+          reactionProfile,
+        }
+      : null
 
- // ===== 生成前 Metrics（表示専用）=====
- const reactionProfile =
-   selectedCharacter && selectedTheme
-     ? getReactionProfile(selectedCharacter, selectedTheme.id)
-     : null
+  async function handleGenerateStory() {
+    const apiKey = localStorage.getItem("openai_api_key")
 
- const plannedMetrics =
-   selectedSituation && reactionProfile
-     ? {
-         requiredFunctions: mapSituationToRequiredFunctions(selectedSituation),
-         plannedModifiers: mapSituationToWorldModifiers(selectedSituation, reactionProfile),
-         reactionProfile,
-       }
-     : null
-
-   async function handleGenerateStory() {
-    if ((mode === "faker_llm" || mode === "llm") && !hasApiKey) {
-      alert("This mode requires an API key")
+    if ((mode === "llm" || mode === "faker_llm") && !apiKey) {
+      alert("OpenAI API key を入力してください")
       return
     }
 
@@ -76,37 +71,20 @@ export default function StoryPage() {
       return
     }
 
-    const res = await fetch("/api/mode3", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        characterId: selectedCharacter,
-        themeId: selectedTheme.id,
-        situationId: selectedSituation,
-        voiceId: selectedVoice,
-      }),
-    })
-
-    const json = await res.json()
-
-    if (!res.ok || !json.ok) {
-      alert(json.error ?? "Mode3 generation failed")
-      return
+    // Faker Mode3 用 snapshot
+    const snapshot = {
+      characterId: selectedCharacter,
+      themeId: selectedTheme.id,
+      situationId: selectedSituation,
+      voiceId: selectedVoice,
     }
 
-    setGeneratedStory(json.text)
-    setResultMetrics(null)
-  }
+    // LLM 実行（apiKey を明示的に渡す）
+    const result = await runWithFakerMode3(snapshot, apiKey!)
 
- function showApiKeyHelp() {
-   alert(
-     "このモードを使うには OpenAI API key が必要です。\n\n" +
-     "1. OpenAIでAPI keyを取得\n" +
-     "2. .env.local に OPENAI_API_KEY を設定\n" +
-     "3. NEXT_PUBLIC_HAS_OPENAI_KEY=true を設定\n" +
-     "4. 開発サーバーを再起動"
-   )
- }
+    setGeneratedStory(result.text)
+    setResultMetrics(result.metrics)
+  }
 
   return (
     <>
@@ -115,13 +93,12 @@ export default function StoryPage() {
 
       {/* 画面中央レイヤー */}
       <div className="content">
-        {/* すりガラスウィンドウ */}
         <main className="glass">
           <h1><p>1001:ショートショート歪曲生成装置</p></h1>
 
-          {/* Mode */}
+          {/* OpenAI API Key */}
           <section style={{ marginBottom: 30 }}>
-            <h2>モード</h2>
+            <h2>OpenAI API 設定</h2>
 
             <div
               style={{
@@ -130,21 +107,76 @@ export default function StoryPage() {
                 marginTop: 16,
               }}
             >
-              {/* Mode3 */}
+              <div
+                style={{
+                  padding: 16,
+                  borderRadius: 12,
+                  color: "#ffc355ff",
+                  background: "#111",
+                }}
+              >
+                <div style={{ marginBottom: 12 }}>
+                  <span
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 600,
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    この装置の使用には"OpenAI API key"が必要です。
+                  </span>
+                </div>
+
+                {/* 既存の入力UIをそのまま中に入れる */}
+                <OpenAIKeyInput />
+
+                <div
+                  style={{
+                    fontSize: 11,
+                    lineHeight: 1.6,
+                    marginTop: 12,
+                    color: "#ffc355ff",
+                  }}
+                >
+                  <p>• この装置はあなた自身の OpenAI API key を使用します。</p>
+                  <p>• API key はこのブラウザ内にのみ保存され、外部には送信されません。</p>
+                  <p>
+                    • API key の取得はこちら：
+                    {" "}
+                    <a
+                      href="https://platform.openai.com/api-keys"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: "#ffd27d",
+                        textDecoration: "underline",
+                        fontWeight: 500,
+                      }}
+                    >
+                      OpenAI API Keys
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          {/* Mode */}
+          <section style={{ marginBottom: 30 }}>
+            <h2>モード</h2>
+
+            <div style={{ display: "grid", gap: 24, marginTop: 16 }}>
               <div
                 style={{
                   padding: 16,
                   borderRadius: 12,
                   color: "#fff",
                   background: mode === "faker_llm" ? "#000000ff" : "#111",
-                  opacity: hasApiKey ? 1 : 0.8,
                 }}
               >
                 <button
-                  onClick={() => {
-                    if (hasApiKey) setMode("faker_llm")
-                    else setShowApiKeyPopup(true)
-                  }}
+                  onClick={() => setMode("faker_llm")}
                   style={{
                     width: "30%",
                     marginBottom: 12,
@@ -154,17 +186,13 @@ export default function StoryPage() {
                     color: "#000000ff",
                   }}
                 >
-                  Faker × LLM {hasApiKey ? "" : "🔒"}
+                  Faker × LLM
                 </button>
 
-                <div style={{ 
-                  fontSize: 11, 
-                  lineHeight: 1.6, 
-                  opacity: 1.0, 
-                  color: '#ffc355ff'}}>
-                  <strong>API key 必須</strong>
+                <div style={{ fontSize: 11, lineHeight: 1.6, color: "#ffc355ff" }}>
+
                   <p>• Fakerが物語構造・制約・歪みを先に確定し、LLMは文章表現のみを担当します。</p>
-                  <p> • 物語の意味や構造はLLMに委ねられることはありません。</p>
+                  <p>• 物語の意味や構造はLLMに委ねられることはありません。</p>
                   <p>• 興味のある方は、各リアクションマトリクスをご覧ください。</p>
                 </div>
               </div>
@@ -246,7 +274,7 @@ export default function StoryPage() {
                 <button
                   key={s.id}
                   onClick={() => {
-                    setSelectedSituation(s.id as SituationKey)
+                    setSelectedSituation(s.id as situationKey)
                     setSelectedVoice(null)
                     setGeneratedStory("")
                     setResultMetrics(null)
@@ -281,7 +309,7 @@ export default function StoryPage() {
                 <button
                   key={v.id}
                   onClick={() => {
-                    setSelectedVoice(v.id as VoiceKey)
+                    setSelectedVoice(v.id as voiceKey)
                     setGeneratedStory("")
                     setResultMetrics(null)
                   }}
@@ -318,7 +346,7 @@ export default function StoryPage() {
                 style={{
                   padding: "12px 24px",
                   background: "#0a0909ff",
-                  color: '#ffc355ff',
+                  color: "#ffc355ff",
                   borderRadius: 20,
                   fontSize: 16,
                   fontWeight: 1800,
@@ -343,4 +371,5 @@ export default function StoryPage() {
         </main>
       </div>
     </>
-  )}
+  )
+}

@@ -3767,7 +3767,7 @@ function StoryPage() {
                 className: "bg"
             }, void 0, false, {
                 fileName: "[project]/pages/story/index.tsx",
-                lineNumber: 114,
+                lineNumber: 117,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3780,12 +3780,12 @@ function StoryPage() {
                                 children: "1001:ショートショート歪曲生成装置"
                             }, void 0, false, {
                                 fileName: "[project]/pages/story/index.tsx",
-                                lineNumber: 120,
+                                lineNumber: 123,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 120,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -3797,7 +3797,7 @@ function StoryPage() {
                                     children: "モード"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3834,7 +3834,7 @@ function StoryPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/story/index.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 146,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3849,51 +3849,51 @@ function StoryPage() {
                                                         children: "API key 必須"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/story/index.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 168,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                                         children: "• Fakerが物語構造・制約・歪みを先に確定し、LLMは文章表現のみを担当します。"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/story/index.tsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 169,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                                         children: " • 物語の意味や構造はLLMに委ねられることはありません。"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/story/index.tsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 170,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                                         children: "• 興味のある方は、各リアクションマトリクスをご覧ください。"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/story/index.tsx",
-                                                        lineNumber: 168,
+                                                        lineNumber: 171,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/story/index.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/story/index.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 137,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 123,
+                            lineNumber: 126,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -3902,7 +3902,7 @@ function StoryPage() {
                                     children: "キャラクター"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 179,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3931,18 +3931,18 @@ function StoryPage() {
                                             children: c.name
                                         }, c.id, false, {
                                             fileName: "[project]/pages/story/index.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 182,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 177,
+                                    lineNumber: 180,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 175,
+                            lineNumber: 178,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -3955,7 +3955,7 @@ function StoryPage() {
                                     children: "テーマ"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 206,
+                                    lineNumber: 209,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3983,30 +3983,30 @@ function StoryPage() {
                                             children: t.label
                                         }, t.id, false, {
                                             fileName: "[project]/pages/story/index.tsx",
-                                            lineNumber: 210,
+                                            lineNumber: 213,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 208,
+                                    lineNumber: 211,
                                     columnNumber: 13
                                 }, this),
                                 selectedTheme && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$ReferencePanel$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ReferencePanel"], {
                                     title: "Character × Theme Matrix (Reaction Matrix)",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$reaction$2f$CharacterThemeMatrix$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["CharacterThemeMatrix"], {}, void 0, false, {
                                         fileName: "[project]/pages/story/index.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 238,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 234,
+                                    lineNumber: 237,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 205,
+                            lineNumber: 208,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -4019,7 +4019,7 @@ function StoryPage() {
                                     children: "シチュエーション"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 242,
+                                    lineNumber: 245,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4046,30 +4046,30 @@ function StoryPage() {
                                             children: s.label
                                         }, s.id, false, {
                                             fileName: "[project]/pages/story/index.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 249,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 244,
+                                    lineNumber: 247,
                                     columnNumber: 13
                                 }, this),
                                 selectedSituation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$ReferencePanel$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ReferencePanel"], {
                                     title: "Reaction × Situation Structure",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$reaction$2f$ReactionSituationMatrix$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "[project]/pages/story/index.tsx",
-                                        lineNumber: 270,
+                                        lineNumber: 273,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 269,
+                                    lineNumber: 272,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 241,
+                            lineNumber: 244,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -4082,7 +4082,7 @@ function StoryPage() {
                                     children: "文体・語り口"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 277,
+                                    lineNumber: 280,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -4108,12 +4108,12 @@ function StoryPage() {
                                             children: v.label
                                         }, v.id, false, {
                                             fileName: "[project]/pages/story/index.tsx",
-                                            lineNumber: 281,
+                                            lineNumber: 284,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 279,
+                                    lineNumber: 282,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$ReferencePanel$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["ReferencePanel"], {
@@ -4126,18 +4126,18 @@ function StoryPage() {
                                         voiceLabelMap: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$voiceLabelMap$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["voiceLabelMap"]
                                     }, void 0, false, {
                                         fileName: "[project]/pages/story/index.tsx",
-                                        lineNumber: 303,
+                                        lineNumber: 306,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 302,
+                                    lineNumber: 305,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 276,
+                            lineNumber: 279,
                             columnNumber: 11
                         }, this),
                         selectedTheme && selectedSituation && selectedVoice && selectedCharacter && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -4159,12 +4159,12 @@ function StoryPage() {
                                 children: "物語を生成する"
                             }, void 0, false, {
                                 fileName: "[project]/pages/story/index.tsx",
-                                lineNumber: 316,
+                                lineNumber: 319,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 315,
+                            lineNumber: 318,
                             columnNumber: 13
                         }, this),
                         generatedStory && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -4176,7 +4176,7 @@ function StoryPage() {
                                     children: "生成された物語"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 340,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("pre", {
@@ -4186,31 +4186,31 @@ function StoryPage() {
                                     children: generatedStory
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 338,
+                                    lineNumber: 341,
                                     columnNumber: 15
                                 }, this),
                                 resultMetrics && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$metrics$2f$MetricsPanel$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["MetricsPanel"], {
                                     metrics: resultMetrics
                                 }, void 0, false, {
                                     fileName: "[project]/pages/story/index.tsx",
-                                    lineNumber: 340,
+                                    lineNumber: 343,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/story/index.tsx",
-                            lineNumber: 336,
+                            lineNumber: 339,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/pages/story/index.tsx",
-                    lineNumber: 119,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/story/index.tsx",
-                lineNumber: 117,
+                lineNumber: 120,
                 columnNumber: 7
             }, this)
         ]

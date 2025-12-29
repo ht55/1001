@@ -12,3 +12,12 @@ out/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+__pycache__/
+engine/
+scripts/
+providers/
+
+# OS
+.DS_Store
+

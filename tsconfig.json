@@ -20,11 +20,11 @@
       "@/*": ["src/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.mts",
-    "**/*.ts",
-    "**/*.tsx"
-, "src/data/semantic/human_frailty/jealousy_ruin"  ],
+    "include": [
+      "next-env.d.ts",
+      "**/*.mts",
+      "**/*.ts",
+      "**/*.tsx"
+    ],
   "exclude": ["node_modules"]
 }
