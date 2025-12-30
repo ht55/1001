@@ -13,10 +13,10 @@ Do not add explanations or meta commentary.
 
 export async function runWithLLM(
   prompt: string,
-  apiKey: string // ★ 必須
+  apiKey: string 
 ): Promise<string> {
   return callOpenAI({
-    apiKey,                 // ★ ユーザーの key
+    apiKey,               
     system: MODE3_SYSTEM_PROMPT,
     user: prompt,
   })

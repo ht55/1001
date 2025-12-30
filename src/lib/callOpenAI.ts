@@ -12,10 +12,6 @@ export async function callOpenAI(
 ): Promise<string> {
   const { apiKey, system, user, temperature } = args
 
-  if (!apiKey || !apiKey.startsWith("sk-")) {
-    throw new Error("Invalid OpenAI API key")
-  }
-
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
