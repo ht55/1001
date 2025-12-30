@@ -33,7 +33,7 @@ export default function ReactionSituationMatrix() {
     <div>
       <h3>Situation Category × ReactionProfile</h3>
       <p style={{ fontSize: 12, opacity: 0.7 }}>
-        デフォルト遷移表（Phase2 下敷き）
+        Charcter x Theme によって得られたReaction ProfileをさらにSituationと掛け合わせた場合に起こり得る歪みパターンの内部構造の一部です。
       </p>
 
       <div

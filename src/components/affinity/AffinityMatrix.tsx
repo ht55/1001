@@ -51,6 +51,11 @@ export default function AffinityMatrix({
 
   return (
     <div>
+     <h3>Situation × Narrative Voice</h3>
+      <p style={{ fontSize: 12, opacity: 0.7 }}>
+        Situation x Narrative Voice の化学反応マトリクスです。それぞれのセルのアイコンにカーソルを置くことでコメントも見ることができます。生成される物語はランダムにFakerテンプレートから抽出、選択肢によって自動的に歪曲された上でLLMから出力される為、コメントにはないAIの暴走が見られる可能性もあります。（ぜひそれもお楽しみください。）
+      </p> 
+
     <div style={{ fontSize: 13, marginBottom: 12, textAlign: 'left', fontWeight: 'bold'}}>
       <img src={strongIcon.src} alt="strong" style={{ width: 14, verticalAlign: 'middle' }} /> = 好相性で王道・
       <img src={neutralIcon.src} alt="neutral" style={{ width: 14, verticalAlign: 'middle' }} /> = 自然な物語が成立・
