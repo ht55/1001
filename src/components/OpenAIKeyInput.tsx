@@ -19,57 +19,27 @@ export function OpenAIKeyInput() {
     setError("")
   }
 
-    if (apiKey) {
+  // 保存済み
+  if (apiKey) {
     return (
-        <div
+      <div
         style={{
-            border: "3px solid #444444ff",     
-            borderRadius: 12,             
-            padding: 12,
-            background: "#0f0f0f",
+          border: "3px solid #444444ff",
+          borderRadius: 12,
+          padding: 12,
+          background: "#0f0f0f",
         }}
-        >
-        <div
-            style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-            }}
-        >
-            {/* チェックアイコン */}
-            <span
-            style={{
-                color: "#6fbf73",         
-                fontSize: 14,
-            }}
-            >
-            ✓
-            </span>
-
-            <span
-            style={{
-                fontSize: 12,             
-                color: "#e6e6e6",
-            }}
-            >
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <span style={{ color: "#6fbf73", fontSize: 14 }}>✓</span>
+          <span style={{ fontSize: 12, color: "#e6e6e6" }}>
             OpenAI API key はこのブラウザに保存されています
-            </span>
+          </span>
         </div>
-        return (
-            <div>
-                <input
-                value={input}
-                onChange={e => setInput(e.target.value)}
-                placeholder="sk-..."
-                />
-                <button onClick={handleSave}>保存</button>
-                {error && <div>{error}</div>}
-            </div>
-            )
 
         <button
-            onClick={clearKey}
-            style={{
+          onClick={clearKey}
+          style={{
             marginTop: 10,
             fontSize: 11,
             color: "#ccc",
@@ -77,10 +47,24 @@ export function OpenAIKeyInput() {
             border: "none",
             cursor: "pointer",
             textDecoration: "underline",
-            }}
+          }}
         >
-            API key を削除
+          API key を削除
         </button>
-        </div>
+      </div>
     )
-    }}
+  }
+
+  // 未保存（入力UI）
+  return (
+    <div>
+      <input
+        value={input}
+        onChange={e => setInput(e.target.value)}
+        placeholder="sk-..."
+      />
+      <button onClick={handleSave}>保存</button>
+      {error && <div>{error}</div>}
+    </div>
+  )
+}
