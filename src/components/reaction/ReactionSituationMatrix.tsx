@@ -15,12 +15,12 @@ const REACTION_AXES: ReactionAxis[] = [
 ]
 
 const TRANSITION_LABEL_MAP: Record<string, string> = {
+  stabilize: "保留",
   fix: "固定",
-  destabilize: "不安定化",
+  destabilize: "撹乱",
   amplify: "増幅",
-  transform: "変形",
-  suppress: "抑制",
   invert: "反転",
+  collapse: "崩壊",
 }
 
 export default function ReactionSituationMatrix() {

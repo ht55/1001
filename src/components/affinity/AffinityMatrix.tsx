@@ -51,9 +51,9 @@ export default function AffinityMatrix({
 
   return (
     <div>
-    <div style={{ fontSize: 13, marginBottom: 12, textAlign: 'center', fontWeight: 'bold'}}>
-      <img src={strongIcon.src} alt="strong" style={{ width: 14, verticalAlign: 'middle' }} /> = 好相性で王道
-      <img src={neutralIcon.src} alt="neutral" style={{ width: 14, verticalAlign: 'middle' }} /> = 自然な物語が成立
+    <div style={{ fontSize: 13, marginBottom: 12, textAlign: 'left', fontWeight: 'bold'}}>
+      <img src={strongIcon.src} alt="strong" style={{ width: 14, verticalAlign: 'middle' }} /> = 好相性で王道・
+      <img src={neutralIcon.src} alt="neutral" style={{ width: 14, verticalAlign: 'middle' }} /> = 自然な物語が成立・
       <img src={mismatchIcon.src} alt="mismatch" style={{ width: 14, verticalAlign: 'middle' }} /> = ズレを楽しむ
     </div>
 
@@ -68,7 +68,11 @@ export default function AffinityMatrix({
       {voices.map(v => (
         <div
           key={`h-${v}`}
-          style={{ fontSize: 11, textAlign: 'center', opacity: 0.7 }}
+          style={{ 
+            fontSize: 12, 
+            fontWeight: "bold",
+            textAlign: 'center', 
+            opacity: 0.9 }}
         >
           {voiceLabelMap[v] ?? v}
         </div>
@@ -79,9 +83,10 @@ export default function AffinityMatrix({
           <div
             style={{
               fontSize: 11,
-              opacity: 0.7,
-              whiteSpace: 'nowrap',
-            }}
+              fontWeight: "bold",
+              textAlign: 'center',
+              opacity: 0.9,
+              whiteSpace: 'nowrap'}}
           >
             {situationLabelMap[situation] ?? situation}
           </div>

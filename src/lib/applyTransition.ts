@@ -1,27 +1,14 @@
 // src/lib/applyTransition.ts
 
-import { ReactionAxis } from "@/types/reactionProfile"
+import type { ReactionAxis } from "@/types/reactionProfile"
+import type { situationCategoryId } from "@/situations/situationCategories"
+import { TRANSITION_MATRIX } from "./transitionMatrix"
 
 export function applyTransition(
-  profile: ReactionAxis,
-  _situationId: string
+  axis: ReactionAxis,
+  categoryId: situationCategoryId
 ) {
-  void _situationId
-
-  switch (profile) {
-    case "distortion":
-      return "destabilize"
-    case "tension":
-      return "amplify"
-    case "void":
-      return "fix"
-    case "collapse":
-      return "collapse"
-    case "transcendence":
-      return "invert"
-    case "resonance":
-    default:
-      return "stabilize"
-  }
+  return TRANSITION_MATRIX[categoryId][axis]
 }
+
 

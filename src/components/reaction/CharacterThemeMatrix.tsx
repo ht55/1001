@@ -41,7 +41,7 @@ function LevelBar({
 
 export function CharacterThemeMatrix() {
   return (
-    <div style={{ overflowX: "auto", fontSize: 10 }}>
+    <div style={{ overflowX: "auto", fontSize: 10, color: "#060606ff" }}>
       <h3>設計者の独断と偏見に基く、特徴の強めなCharacter x Themeを掛け合わせた化学反応(ReactionProfile)の傾向とマグニチュードを可視化したものです。(左右にスクロール)</h3>
 
       <div
@@ -57,7 +57,8 @@ export function CharacterThemeMatrix() {
           <div
             key={t.id}
             style={{
-              fontSize: 11,
+              fontSize: 12,
+              fontWeight: "bold",
               textAlign: "center",
               opacity: 0.8,
             }}

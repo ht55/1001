@@ -1,1 +1,312 @@
-[00:00:00.947] Server  LOG      ✓ Ready in 677ms
+[00:00:00.903] Server  LOG      ✓ Ready in 625ms
+[03:17:02.954] Server  LOG      ✓ Compiled in 186ms
+[03:30:00.719] Server  LOG      ✓ Compiled in 59ms
+[03:32:28.201] Server  LOG      ✓ Compiled in 161ms
+[03:33:32.915] Server  LOG      ✓ Compiled in 132ms
+[03:34:02.106] Server  LOG      ✓ Compiled in 48ms
+[03:35:08.434] Server  LOG      ✓ Compiled in 48ms
+[03:35:26.687] Server  LOG      ✓ Compiled in 63ms
+[03:35:39.635] Server  LOG      ✓ Compiled in 43ms
+[03:35:52.306] Server  LOG      ✓ Compiled in 23ms
+[03:36:15.231] Server  LOG      ✓ Compiled in 40ms
+[03:36:32.133] Server  LOG      ✓ Compiled in 35ms
+[03:36:39.546] Server  LOG      ✓ Compiled in 41ms
+[03:36:44.554] Server  LOG      ✓ Compiled in 10ms
+[03:37:37.954] Server  LOG      ✓ Compiled in 62ms
+[03:38:04.885] Server  LOG      ✓ Compiled in 53ms
+[03:38:43.635] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `div`.  It was passed a child from CharacterThemeMatrix.
+[03:42:17.901] Server  LOG      ✓ Compiled in 44ms
+[03:42:39.799] Server  LOG      ✓ Compiled in 37ms
+[03:43:03.641] Server  LOG      ✓ Compiled in 28ms
+[03:44:17.609] Server  LOG      ✓ Compiled in 44ms
+[03:44:24.678] Server  LOG      ✓ Compiled in 10ms
+[03:45:50.481] Server  LOG      ✓ Compiled in 34ms
+[03:46:01.112] Server  LOG      ✓ Compiled in 46ms
+[04:11:59.079] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.080] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.080] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.081] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.081] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.139] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.140] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.143] Server  ERROR    ⨯ ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:11:59.145] Server  LOG      ✓ Compiled in 183ms
+[04:12:31.478] Server  LOG      ✓ Compiled in 204ms
+[04:12:43.040] Server  LOG      ✓ Compiled in 49ms
+[04:14:57.170] Server  LOG      ✓ Compiled in 51ms
+[04:15:31.790] Browser ERROR   ./src/lib/applyTransition.ts:4:1
+Module not found: Can't resolve './transitionMatrix'
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[04:15:31.790] Browser ERROR   ./src/lib/applyTransition.ts:4:1
+Export TRANSITION_MATRIX doesn't exist in target module
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+The export TRANSITION_MATRIX was not found in module [project]/src/lib/transitionMatrix.ts [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+[04:15:31.790] Browser ERROR   ./src/lib/applyTransition.ts:4:1
+Export TRANSITION_MATRIX doesn't exist in target module
+  2 |
+  3 | import type { ReactionAxis } from "@/types/reactionProfile"
+> 4 | import { TRANSITION_MATRIX } from "./transitionMatrix"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function applyTransition(
+  7 |   axis: ReactionAxis,
+
+The export TRANSITION_MATRIX was not found in module [project]/src/lib/transitionMatrix.ts [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Browser:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./src/lib/applyTransition.ts
+    ./src/components/reaction/ReactionSituationMatrix.tsx
+    ./pages/index.tsx
+[04:21:04.688] Server  LOG      ✓ Compiled in 60ms
+[04:21:57.959] Server  LOG      ✓ Compiled in 46ms
+[04:25:30.427] Server  LOG      ✓ Compiled in 32ms
+[04:28:48.807] Server  LOG      ✓ Compiled in 125ms
