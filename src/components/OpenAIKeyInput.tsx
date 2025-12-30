@@ -55,6 +55,17 @@ export function OpenAIKeyInput() {
             OpenAI API key はこのブラウザに保存されています
             </span>
         </div>
+        return (
+            <div>
+                <input
+                value={input}
+                onChange={e => setInput(e.target.value)}
+                placeholder="sk-..."
+                />
+                <button onClick={handleSave}>保存</button>
+                {error && <div>{error}</div>}
+            </div>
+            )
 
         <button
             onClick={clearKey}
