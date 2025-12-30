@@ -144,7 +144,7 @@ export default function StoryPage() {
                 </div>
 
                 {/* 入力UI */}
-                <OpenAIKeyInput />
+                {ready && <OpenAIKeyInput />}
 
                 <div
                   style={{
@@ -176,7 +176,6 @@ export default function StoryPage() {
               </div>
             </div>
           </section>
-
 
           {/* Mode */}
           <section style={{ marginBottom: 30 }}>
