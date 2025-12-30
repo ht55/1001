@@ -2,6 +2,7 @@
 
 import { GeneratingOverlay } from "@/components/GeneratingOverlay"
 import { useState } from "react"
+import { useOpenAIKey } from "@/hooks/useOpenAIKey"
 
 import { characters } from "@/data/characters"
 import { themes } from "@/themes"
@@ -61,23 +62,22 @@ export default function StoryPage() {
       : null
 
   const [isGenerating, setIsGenerating] = useState(false)
-  
+  const { apiKey, ready } = useOpenAIKey()
 
-  async function handleGenerateStory() {
-    // 生成開始
-    setIsGenerating(true)
+    async function handleGenerateStory() {
+      setIsGenerating(true)
 
-    try {
-    const apiKey = localStorage.getItem("openai_api_key")
+      try {
+        if (!ready) return
 
-    if ((mode === "llm" || mode === "faker_llm") && !apiKey) {
-      alert("OpenAI API key を入力してください")
-      return
-    }
+        if ((mode === "llm" || mode === "faker_llm") && !apiKey) {
+          alert("OpenAI API key を入力してください")
+          return
+        }
 
-    if (!selectedTheme || !selectedSituation || !selectedVoice || !selectedCharacter) {
-      return
-    }
+        if (!selectedTheme || !selectedSituation || !selectedVoice || !selectedCharacter) {
+          return
+        }
 
     // Faker Mode3 用 snapshot
     const snapshot = {
