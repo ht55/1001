@@ -143,7 +143,7 @@ export default function StoryPage() {
                   </span>
                 </div>
 
-                {/* 既存の入力UIをそのまま中に入れる */}
+                {/* 入力UI */}
                 <OpenAIKeyInput />
 
                 <div
