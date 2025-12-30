@@ -6,6 +6,7 @@ import { applyTransition } from "@/lib/applyTransition"
 import { pickExpressionGate } from "@/lib/pickExpressionGate"
 import { getDominantAxis } from "@/lib/getDominantAxis"
 import type { StoryConstraints } from "./constraints.schema"
+import { getSituationCategoryId } from "@/lib/getSituationCategoryId"
 
 export function buildConstraints(input: StoryContextInput): StoryConstraints {
   // Phase1: 意味生成（6軸ベクトル）
@@ -19,7 +20,7 @@ export function buildConstraints(input: StoryContextInput): StoryConstraints {
   // Phase2: 意味変形
   const transition = applyTransition(
     dominantAxis,
-    input.situationId
+    getSituationCategoryId(input.situationId)
   )
 
   // Expression Gate

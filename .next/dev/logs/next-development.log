@@ -1,15 +1,4 @@
-[00:00:00.878] Server  LOG      ✓ Ready in 597ms
-[00:01:11.592] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:00.857] Server  LOG      ✓ Ready in 591ms
+[00:00:19.179] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `div`.  It was passed a child from CharacterThemeMatrix.
-[00:04:12.397] Server  LOG      ✓ Compiled in 89ms
-[00:09:59.956] Server  LOG      ✓ Compiled in 56ms
-[00:12:46.371] Server  LOG      ✓ Compiled in 54ms
-[00:13:10.023] Server  LOG      ✓ Compiled in 34ms
-[00:13:52.912] Server  LOG      ✓ Compiled in 45ms
-[00:14:06.060] Server  LOG      ✓ Compiled in 12ms
-[00:15:00.067] Server  LOG      ✓ Compiled in 36ms
-[00:16:03.913] Server  LOG      ✓ Compiled in 25ms
-[00:17:04.221] Server  LOG      ✓ Compiled in 45ms
-[00:18:40.069] Server  LOG      ✓ Compiled in 44ms
-[00:19:01.505] Server  LOG      ✓ Compiled in 22ms
