@@ -23,3 +23,31 @@ providers/
 .DS_Store
 
 jest.config.js
+
+# dependencies
+node_modules
+
+# build output
+.next
+out
+dist
+
+# env
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Vercel
+.vercel
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+.vscode
+.idea
