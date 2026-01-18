@@ -7,7 +7,7 @@ Experimental Faker x LLM story distorting generator in Japanese.
 PythonライブラリのFaker x LLMによる、日本語の実験的超短編歪曲生成装置。日本語での説明はこのページの最後にあります。
 
 You can play with the generator here. こちらから実際に遊べます:  
-👉 https://1001generator.vercel.app
+👉 https://1001generator.5labs.us
 
 ## About This Project
 
