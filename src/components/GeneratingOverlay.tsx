@@ -1,3 +1,5 @@
+// src/components/GeneratingOverlay.tsx
+
 type Props = {
   visible: boolean
 }
